@@ -1,6 +1,4 @@
-<% require 'pry' %>
-
-<h1><%= @list.name %>: </h1>
+<h1><%= @list.name %></h1>
 
 <h3>
 	<%= @list.description %>
@@ -27,8 +25,8 @@
 
 <hr>
 
-<%= link_to 'Edit List', edit_list_path(@list)  %>
+<%= link_to 'Edit List', edit_list_path(@list)  %> |
 
-<%= link_to 'Delete List', list_path(@list), method: :delete %> 
+<%= link_to 'Delete List', list_path(@list), method: :delete %> |
 
 <%= link_to 'All Lists', lists_path %>

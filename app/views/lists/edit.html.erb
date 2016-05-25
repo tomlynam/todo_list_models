@@ -1,12 +1,4 @@
 <h1>Editing: <%= @list.name %></h1>
 <br>
 
-<%= form_for @list do |f| %>
-	<%= f.label :name %>
-	<%= f.text_field :name %>
-
-	<%= f.label :description %>
-	<%= f.text_field :description %>	
-
-	<%= f.submit %>
-<% end %>
+<%= render(partial: 'form') %>
